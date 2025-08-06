@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/MovieApp--/', // <-- match your repo name
+  base: '/MovieApp--/',
 })
