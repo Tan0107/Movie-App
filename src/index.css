@@ -1,0 +1,242 @@
+/* ============================
+   AUTH FORM STYLES
+============================ */
+.auth-form-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form-container input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.auth-form-container button {
+  padding: 0.75rem 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.auth-form-container button:hover {
+  background-color: #357abd;
+}
+
+.auth-form-container p {
+  text-align: center;
+}
+
+.auth-form-container p a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.auth-form-container p a:hover {
+  text-decoration: underline;
+}
+
+.auth-form-container p[style] {
+  color: red;
+  text-align: center;
+}
+
+/* ============================
+   NAVBAR STYLES
+============================ */
+.navbar {
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.navbar-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-user {
+  margin-right: 0.8rem;
+  font-style: italic;
+  color: #90ee90;
+}
+
+.navbar-button {
+  background: transparent;
+  color: #ff4c4c;
+  border: 1px solid #ff4c4c;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.navbar-button:hover {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+/* ============================
+   HOME PAGE STYLES
+============================ */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* ============================
+   MOVIE CARD STYLES
+============================ */
+.movie-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 2rem;
+}
+
+.movie-card:hover {
+  transform: scale(1.015);
+}
+
+/* Poster Section */
+.poster-wrapper {
+  flex: 0 0 250px;
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 1px solid #eee;
+}
+
+/* Info Section */
+.movie-info {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.movie-genre {
+  font-size: 0.85rem;
+  padding: 0.4em 0.6em;
+  border-radius: 6px;
+  background-color: #e0e0e0;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.movie-year {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.movie-description {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Details Button */
+.details-link {
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.details-link:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .movie-card {
+    flex-direction: column;
+  }
+
+  .poster-wrapper {
+    flex: none;
+    height: 300px;
+  }
+
+  .movie-info {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .details-link {
+    align-self: center;
+  }
+}
